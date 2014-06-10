@@ -321,8 +321,8 @@ type ListReceivedByAccountResult struct {
 // ListReceivedByAddressResult models the data from the listreceivedbyaddress
 // command.
 type ListReceivedByAddressResult struct {
-	Address       string  `json:"address"`
 	Account       string  `json:"account"`
+	Address       string  `json:"address"`
 	Amount        float64 `json:"amount"`
 	Confirmations uint64  `json:"confirmations"`
 }
