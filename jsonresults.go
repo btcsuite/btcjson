@@ -611,7 +611,7 @@ func ReadResultCmd(cmd string, message []byte) (Reply, error) {
 			if res.ScriptPubKey.Addresses == nil {
 				res.ScriptPubKey.Addresses = []string{}
 			}
-			result.Result = true
+			result.Result = res
 		}
 	case "getwork":
 		// getwork can either return a JSON object or a boolean
