@@ -114,6 +114,10 @@ var (
 		Code:    -17,
 		Message: "Wallet is already unlocked",
 	}
+	ErrWalletInvalidAccount = Error{
+		Code:    -18,
+		Message: "Invalid account",
+	}
 )
 
 // Specific Errors related to commands.  These are the ones a user of the rpc
